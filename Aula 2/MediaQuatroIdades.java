@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class porgrama {
+public class MediaQuatroNumeros {
 
 	public static void main(String[] args) {
 		int i1;
