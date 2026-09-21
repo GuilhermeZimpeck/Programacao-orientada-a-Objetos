@@ -12,4 +12,10 @@ class Main {
         myDogs[0].name = "Fred";
         myDogs[1] = "Marge";
 
+        System.out.println("o nome do meu cachorro é: "+ myDogs[2].name);
+
+        int x = 0;
+        while(x < myDogs.length) {
+            myDogs[x].bark();
+            x = x + 1;
     }
