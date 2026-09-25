@@ -6,6 +6,8 @@ public class Utils {
 			i [0] += compra[cont].getPrecoFinal();
 			i [1] += compra[cont].getPreco();
 			}
+		i[0] = i[0] / compra.length;
+		i[1] = i[1] / compra.length;
 		return i;
 		}
 }
