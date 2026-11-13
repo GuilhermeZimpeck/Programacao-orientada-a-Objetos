@@ -106,23 +106,14 @@ public class Main {
             // Obtém a lista de projetos pertencente ao grupo atual
             ArrayList projetos = grupo.getProjetos();
 
-            // Cria um Iterator para percorrer os projetos
-            Iterator itProj = projetos.iterator();
+            // loop da arraylist
+            for (int i = 0; i < projetos.size(); i++) {
 
-            // Enquanto existir um próximo projeto
-            while (itProj.hasNext()) {
+                Projeto p = (Projeto) projetos.get(i);
 
-                // Obtém o próximo projeto e avança o Iterator
-                Projeto p = (Projeto) itProj.next();
-
-                // Adiciona o financiamento do projeto à soma
                 soma += p.getValorFinanciamento();
-
             }
-
-            // Imprime o nome do grupo e a soma dos financiamentos
             System.out.println(grupo.getNome() + " - " + soma);
-
         }
     }
 }
