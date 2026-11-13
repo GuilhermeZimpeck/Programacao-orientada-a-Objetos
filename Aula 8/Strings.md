@@ -34,3 +34,7 @@ retira espaços no começo e fim:
 ```
 m = m.trim();
 ```
+sepera a string em partes com base no separador escolhido
+```
+String[] partes = str.split("#");
+```
