@@ -144,7 +144,7 @@ class Util {
             MedicaoEnergia medicao;
 
             // Verifica se o ID começa com a letra S
-            if (id.startsWith("S")) {
+            if (id.charAt(0) == 'S' {
 
                 // Cria uma medição solar
                 medicao = new MedicaoSolar(id, nome, energia);
